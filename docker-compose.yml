@@ -1,0 +1,15 @@
+version: "3.7"
+services:
+  service: 
+    image: mcr.microsoft.com/windows/nanoserver:20H2
+    entrypoint:
+      - cmd
+      - /C
+      - type
+      - 'C:\Secrets\Secret'
+    secrets:
+      - source: 'all'
+        target: 'C:\Secrets\'
+secrets:
+  all:
+    file: './Secrets/'
