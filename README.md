@@ -31,3 +31,7 @@ Error response from daemon: invalid mount config for type "bind": invalid mount 
 ```
 
 This shows that secrets directories do not seem to work with Docker Compose v2.
+
+This result can be reproduced at least with the following versions of Docker Composes:
+* 2.5.1
+* 2.6.1
