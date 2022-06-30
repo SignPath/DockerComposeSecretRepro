@@ -6,6 +6,12 @@ This reproduction sample shows a problem with mounting secret directories (as fi
 
 This shows the respective outputs when running the reproduction sample Docker Compose v1/v2.
 
+The problem could be reproduced on:
+* Docker Desktop 4.6.1 (with the included Docker Compose version)
+* Docker Desktop 4.8.2 (with the included Docker Compose version)
+* Docker Desktop 4.8.2 with Docker Compose 2.6.1
+* Mirantis Container Runtime 20.10.9 with Docker Compose 2.6.1 on Windows Server 2019
+
 ## Docker Compose v1
 
 When running `docker-compose up` (aka Docker Compose v1) in the directory the following output is shown:
